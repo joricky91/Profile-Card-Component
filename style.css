@@ -38,6 +38,11 @@ body{
     left: 50%;
 }
 
+main{
+    padding: 20px;
+    z-index: 10;
+}
+
 .card{
     background-color: white;
     border-radius: 15px;
@@ -46,7 +51,7 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    z-index: 10;
+   
 }
 
 .card-body{
@@ -82,7 +87,7 @@ body{
     margin-top: 0.7rem;
 }
 
-footer{
+.stats-wrapper{
     border-top: 0.3px solid hsla(0, 0%, 86%, 0.888);
     display: flex;
     justify-content: space-evenly;
@@ -97,14 +102,15 @@ footer{
     justify-content: center;
 }
 
-.stats h3{
+.stats .stats-heading{
     text-align: center;
     font-weight: 700;
     margin: 4px;
     color: var(--very-dark-desaturated-blue);
+    font-size: 18px;
 }
 
-.stats p{
+.stats .stats-p{
     font-size: 9px;
     letter-spacing: 2px;
     color: var(--dark-gray);
